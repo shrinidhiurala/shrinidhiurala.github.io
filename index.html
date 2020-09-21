@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<title>Home page</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link href="footer.css" rel="stylesheet">
+<link href="styles.css" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<style>
+
+</style>
+</head>
+<body>
+
+  <div class="topnav" id="myTopnav">
+    <a href="index.html" class="active">Home</a>
+    <a href="cycle.html">Cycle</a>
+    <a href="video.html">Video</a>
+    <a href="other.html">Other</a>
+    <select class="themebutton">
+            <option value='lighttheme'>Light</option>
+            <option value='darktheme'>Dark</option>
+    </select>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+
+<div class="lighttheme" id="theme1" >
+
+  <h3 style="text-align:center; "><b>ikigai</b></h3>
+  <p style="text-align:center;">
+  The desire to find our Ikigai dwelves within all of us, whether we are aware of it or not.<br>
+  I’m currently in my early 20s, and wish to recognise it, nurture it and develop myself as a truly self-aware,
+  self-sufficient and self-reliant person, who belongs to the community that also belongs to me.<br><br>
+  While cycling is my first love, I feel passionate about a few other things too.<br>
+  I am yet to find the balance between which of them I need to pursue in order to make a decent living while being happy.
+  </p>
+ <img src="images/home/ikigai.JPG" alt="cycle" style="width:100% ">
+ </div>
+
+<h3 style="text-align:center;">Explore other tabs to see more...</h3><br>
+
+<div style="padding-left:20px;">
+  <p>
+    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+    Hint
+    </button>
+  </p>
+
+  <div class="collapse" id="collapseExample">
+    <div class="card card-body">
+      P.S. you can check out dark theme too :p
+    </div>
+  </div>
+</div><br>
+
+<footer>
+  <a href="https://www.facebook.com/shrinidhi.urala/" target="_blank" class="fa fa-facebook"></a>
+  <a href="https://www.youtube.com/channel/UCFAxnE6hvb3wFo-b38kwy_Q?view_as=subscriber" target="_blank" class="fa fa-youtube"></a>
+  <a href="https://www.instagram.com/shrinidhi_urala/?hl=en" target="_blank" class="fa fa-instagram"></a>
+  <a href="#" target="_blank" class="fa fa-twitter"></a>
+  <a href="https://www.linkedin.com/in/shrinidhiurala/" target="_blank" class="fa fa-linkedin"></a>
+</footer>
+
+
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+
+
+ document.querySelector('select').onchange = function()
+ {
+   document.getElementById('theme1').className = this.value;
+   document.getElementById('theme2').className = this.value;
+   document.getElementById('theme3').className = this.value;
+ }
+
+
+//dcrolling staying effect
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("topnav").style.top = "0";
+  } else {
+    document.getElementById("topnav").style.top = "-50px";
+  }
+}
+</script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+
+
+</body>
+</html>
+

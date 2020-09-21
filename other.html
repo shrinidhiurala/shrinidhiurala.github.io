@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<title>Other</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link href="footer.css" rel="stylesheet">
+<link href="other.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+
+<style>
+
+</style>
+</head>
+<body>
+
+<div class="topnav" id="myTopnav">
+  <a href="index.html">Home</a>
+  <a href="cycle.html">Cycle</a>
+  <a href="video.html" >Video</a>
+  <a href="other.html" class="active">Other</a>
+  <select class="themebutton">
+            <option value='lighttheme'>Light</option>
+            <option value='darktheme'>Dark</option>
+  </select>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+
+
+<h2 style="text-align: center;color:white; background-color:#003366; padding:10px; margin:0;">Other hobby</h2>
+
+<div class="parallax1"></div>
+
+<div class="lighttheme" id="theme1" >
+
+  <h3 style="text-align:center;">RC drones and planes</h3><br>
+  <p>
+   Fixing electronics around the house has been a childhood hobby. I happened to develop this into something bigger, during my engineering years, where I had plenty of spare time.
+   I have helped solder up electronics projects for my friends. However, what I love mainly is building things that can move.<br><br>
+   I have built few planes and drones. I am presently working on improving my FPV drone, which I built a few years ago.
+   Wanderlust is also something that I believe I have abundance of, which has lead me to exploring a lot of places in and around my hometown.
+   While cycling helped me discover places, my love for biking and road trips has taken me to several trekking spots and nature camps.
+   I enjoy long bike rides with my friends too, they makes any journey complete.
+   </p><br>
+
+   <div class="row">
+    <div class="col1"><img src="images/drone/3.jpg" alt="cycle" style="width:100% "></div>
+    <div class="col1"><img src="images/drone/9.jpeg" alt="cycle" style="width:100% "></div>
+    <div class="col1"><img src="images/drone/8.jpg" alt="cycle" style="width:100% "></div>
+  </div>
+</div>
+
+<div class="parallax2"></div>
+
+<div class="lighttheme" id="theme2" >
+
+  <p>
+   Fixing electronics around the house has been a childhood hobby. I happened to develop this into something bigger, during my engineering years, where I had plenty of spare time.
+   I have helped solder up electronics projects for my friends. However, what I love mainly is building things that can move.<br><br>
+   I have built few planes and drones. I am presently working on improving my FPV drone, which I built a few years ago.
+   Wanderlust is also something that I believe I have abundance of, which has lead me to exploring a lot of places in and around my hometown.
+   While cycling helped me discover places, my love for biking and road trips has taken me to several trekking spots and nature camps.
+   I enjoy long bike rides with my friends too, they makes any journey complete.
+   </p><br>
+
+   <div class="row">
+   <video class="col1" width="240" height="520" controls>
+     <source src="videos/ready.mp4" type="video/mp4">
+   </video>
+   <video class="col1" width="240" height="520" controls>
+     <source src="videos/flop.mp4" type="video/mp4">
+   </video>
+   <video class="col1" width="240" height="520" controls>
+     <source src="videos/flop.mp4" type="video/mp4">
+   </video>
+   </div>
+
+   <div ><img src="images/drone/1.jpg" alt="cycle" style="width:100% "></div>
+
+</div>
+
+<div class="parallax3"></div>
+
+<footer>
+  <a href="https://www.facebook.com/shrinidhi.urala/" target="_blank" class="fa fa-facebook"></a>
+  <a href="https://www.youtube.com/channel/UCFAxnE6hvb3wFo-b38kwy_Q?view_as=subscriber" target="_blank" class="fa fa-youtube"></a>
+  <a href="https://www.instagram.com/shrinidhi_urala/?hl=en" target="_blank" class="fa fa-instagram"></a>
+  <a href="#" target="_blank" class="fa fa-twitter"></a>
+  <a href="https://www.linkedin.com/in/shrinidhiurala/" target="_blank" class="fa fa-linkedin"></a>
+</footer>
+
+
+
+
+
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+
+ document.querySelector('select').onchange = function()
+ {
+   document.getElementById('theme1').className = this.value;
+   document.getElementById('theme2').className = this.value;
+   document.getElementById('theme3').className = this.value;
+ }
+
+
+</script>
+
+</body>
+</html>
+
